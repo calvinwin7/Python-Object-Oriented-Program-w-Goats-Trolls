@@ -19,7 +19,7 @@ def makeGoatName():
     name = FIRST_NAMES[random.randrange(len(FIRST_NAMES))]
     last_name = LAST_NAMES[random.randrange(len(LAST_NAMES))]
 
-    if random.random < 0.25:
+    if random.random() < 0.25:
         middle_initial = chr(random.randint(0, 0.25) + 65)
         name += " " + middle_initial + "."
 
